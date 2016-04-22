@@ -11,6 +11,7 @@ class SitesController < ApplicationController
 
   def index_per_price
     price =  params[:price]
+    price = 0 if params[:price] == ""
     @sites = Site.where(" price <= ? ", price)
   end
 
