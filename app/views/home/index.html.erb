@@ -12,9 +12,13 @@
 		</div>
 
  	<div class="btn_login">
+ 		<%= link_to new_user_session_path do%>
+ 			<button class="btn_usuario">Usuario</button>
+ 		<% end %>
 
- 		<a href="http://localhost:3000/users/sign_in"><button class="btn_usuario">Usuario</button></a>
- 		<a href="http://localhost:3000/users/sign_up"><button class="btn_registro">Registrarse</button></a>
+ 	 		<%= link_to new_user_registration_path do%>
+ 			<button class="btn_registro">Registrarse</button>
+ 		<% end %>
 		
  	</div>
 		
@@ -33,7 +37,9 @@
     	<span class="btn_price"><%= submit_tag "Ver" %></span>
     <% end %>
 
-	<div><a href="http://localhost:3000/categories"> Ver guía </a></div> 
+	<div>
+		<%= link_to categories_path %>
+	</div> 
 </div>
 
 <footer>

@@ -1,0 +1,144 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*..............................Variables.......................................................*/
+ @import "variables";
+
+*{
+	@include general
+}
+
+
+/*.................................Start Mobile.................................................*/
+
+ header{
+  @include headerM
+ }
+
+ 	.btn_price{
+ 		input{
+ 			font-size: 16px;
+ 			width: 60px;
+ 			background: rgb(255,118,0);
+ 			color: #fff;
+ 			border-radius: 10px;
+ 		}
+ 	}
+
+ .btn_login{
+ 	margin-left: 110px;
+ 	.btn_usuario{
+ 		margin-top: 5px;
+ 		background: rgb(255,118,0);
+ 		border-radius: 10px;
+ 		padding: 5px;
+ 		width: 100px;
+ 		color: #fff;
+ 	}
+ 	.btn_registro{
+ 		margin-top: 1px;
+ 		background: rgb(255,118,0);
+ 		border-radius: 10px;
+ 		padding: 5px;
+ 		width: 100px;
+ 		color: #fff;
+ 	}
+ }
+
+ .content_home{
+	margin: 0 auto;
+	padding: 0px;
+	width: 100%;
+	height: 260px;
+	text-align: center;
+	background: rgba(255,255,255,.80);
+	h1{
+		font-size: 38px;
+		color: rgb(178,83,0);
+	}
+	span{
+		padding: 3px;
+		font-size: 26px;
+	}
+	div{
+		margin: 0 auto;
+		padding-right: 5px;
+		background: rgb(255,118,0);
+		width: 150px;
+		height: 35px;
+		margin-top: 10px;
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 24px;
+		}
+	}
+}
+
+ .slogan{
+ 	background: rgb(178,83,0);
+ 	height: 30px;
+ 	p{
+ 		color:#fff;
+ 		text-align: center;
+ 		font-size: 22px;
+ 	}
+ }
+
+ /*.................................End Mobile...................................................*/
+
+ /*.................................Start Tablet.................................................*/
+ @media screen and (min-width: 768px){
+
+
+ 	header{
+ 		background: red;
+ 	}
+
+ }
+ /*.................................End Tablet...................................................*/
+
+ /*.................................Start Desktop................................................*/
+ @media screen and (min-width: 992px){
+
+ 	 	header{
+ 		@include headerD
+ 	}
+
+ .logo{
+ 	@include logoD
+ }
+
+ .fondo{
+	background: url(<%= asset_path 'medellinHome.jpg' %>) center no-repeat;
+	@include fondo
+}
+
+ 	.btn_login{
+ 	margin-left: 1640px;
+ 	.btn_usuario{
+ 		margin-top: 15px;
+ 	}
+ 	.btn_registro{
+ 		margin-top: 15px;
+ 	}
+ }
+
+ 	.content_home{
+ 		padding: 20px;
+ 		margin-top: 150px;
+		width: 30%;
+			h1{
+		font-size: 46px;
+	}
+	span{
+		font-size: 22px;
+	}
+	div{
+		margin-top: 30px;
+		}
+	}
+
+ }
+ /*..................................End Desktop..................................................*/
