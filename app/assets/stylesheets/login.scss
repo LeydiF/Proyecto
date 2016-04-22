@@ -1,0 +1,142 @@
+@import "variables";
+
+
+/*.................................Start Mobile.................................................*/
+ .login{
+    @include centrar;
+	h2{
+ 	height: 70px;
+ 	background: #0B615E;
+ 	border-bottom: 5px solid #000;
+ 	margin-top: 0px;
+ 	color: #fff;
+ 	padding: 15px;
+ 	text-align: center;
+ }
+ .forgot{
+ 	text-align: center;
+ }
+}
+
+ .botones{
+ 	margin-top: 20px;
+ 	background-color: #0B615E;
+ 	width: 100%;
+ 	height: 60px;
+ 	border-radius: 5px;
+ 	text-align: center;
+ 	padding: 17px;
+ 	a{
+ 		color: #fff;
+ 	}
+ 		
+ }
+
+ .field{
+ 		#user_email{
+ 			width: 100%;
+ 			height: 50px;
+ 		}
+ 		#user_email:focus{
+ 			border: 2px solid #0B615E;
+ 		}
+ 		#user_password{
+ 			width: 100%;
+ 			height: 50px;
+ 		}
+ 		#user_password:focus{
+ 			border: 2px solid #0B615E;
+ 		}
+ 		#user_remember_me{
+ 			margin-top: 20px;
+ 		}
+ 		#user_password_confirmation{
+ 			width: 100%;
+ 			height: 50px;
+ 		}
+ 		 #user_password_confirmation{
+ 			border: 2px solid #0B615E;
+ 		}
+ 	}
+
+ .sign{
+    @include centrar;
+	.title{
+ 	height: 70px;
+ 	background: #0B615E;
+ 	border-bottom: 5px solid #000;
+ 	margin-top: 0px;
+ 	color: #fff;
+ 	padding: 15px;
+ 	text-align: center;
+ }
+ .actions{
+ 	input{
+ 	@include boton
+ }
+ 	}
+
+ .action1{
+   text-align: center;
+   margin-top: 20px;	
+
+ }
+
+ }
+
+.password{
+ 	@include centrar;
+	.title{
+ 	height: 70px;
+ 	background: #0B615E;
+ 	border-bottom: 5px solid #000;
+ 	margin-top: 0px;
+ 	color: #fff;
+ 	padding: 17px;
+ 	text-align: center;
+ 	font-size: 26px;
+ }
+ .actions{
+ 	input{
+ 	@include boton
+ }
+ 	}
+ .action1{
+   text-align: center;
+   margin-top: 20px;
+   float: left;	
+
+ }
+  .action2{
+   text-align: center;
+   margin-top: 20px;
+   float: left;
+   margin-left: 50px;	
+
+ }
+
+ }
+
+ /*.................................End Mobile...................................................*/
+
+ /*.................................Start Tablet.................................................*/
+ @media screen and (min-width: 768px){
+
+ 	
+
+ }
+ /*.................................End Tablet...................................................*/
+
+ /*.................................Start Desktop................................................*/
+ @media screen and (min-width: 992px){
+.login{
+	top:150px;
+}
+.sign{
+	top:150px;
+}
+.password{
+	top:150px;
+}		
+ }
+ /*..................................End Desktop..................................................*/

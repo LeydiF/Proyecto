@@ -1,0 +1,66 @@
+<div class="body bodyTwo">
+
+<header>
+ <div class="logo">
+	</div>
+
+		<% if user_signed_in? %>
+			<%= current_user.email %>
+			<%= link_to "Logout", destroy_session_path(current_user), method: 
+			:delete %><br />
+		<% end %>
+	
+</header>
+<div class="slogan">
+    <p>Sitios de interés  y turísticos</p>
+</div>
+<div class="slider">
+    <ul id="images">
+    <li class="image"><%= image_tag "slider/explora_slider.jpg"%></li>
+    <li class="image"><%= image_tag "slider/flores_slider.jpg"%></li>
+    <li class="image"><%= image_tag "slider/jardin_slider.jpg"%></li>
+    <li class="image"><%= image_tag "slider/navidad_slider.jpg"%></li>
+    <li class="image"><%= image_tag "slider/plaza_slider.jpg"%></li>
+
+        <!-- <li class="image"><img src="explora_slider.jpg"></li> 
+        <li class="image"><img src="flores_slider.jpg"></li>
+        <li class="image"><img src="jardin_slider.jpg"></li>
+        <li class="image"><img src="navidad_slider.jpg"></li>
+        <li class="image"><img src="plaza_slider.jpg"></li> -->
+    </ul>
+    
+    <ul id="botones">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    
+    <a id="anterior" href"#">
+    <div id="TrianguloIzquierda"></div>
+    </a>
+    
+    <a id="siguiente" href"#">
+    <div id="TrianguloDerecha"></div>
+    </a>
+</div>
+    <nav>
+      <ul>
+
+    <% @categories.each do |category| %>
+
+        <li><%= link_to category.name, sites_path(category_id: category.id) %></li>
+
+
+    <% end %>
+
+       </ul>
+    </nav>
+</div>
+
+    <footer>
+        <div class="atras"><%= link_to 'Atrás', root_path %></div>
+    </footer>
+
+

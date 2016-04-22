@@ -1,0 +1,20 @@
+<header>
+ <div class="logo">
+  </div>
+  
+</header>
+
+<div class="slogan">
+
+</div>
+<h1>Lugares a tu alcance</h1>
+
+<% @sites.each do |index_per_price| %>
+	<%= link_to(index_per_price) do %>	
+	     	<%= index_per_price.name %></br>
+	     <% end %>
+<% end %>
+
+<footer>
+	
+</footer>

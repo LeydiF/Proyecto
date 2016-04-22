@@ -1,0 +1,72 @@
+/*Funciones*/
+
+@mixin headerD(){
+	background: rgba(214,186,150,.80);
+ 	width: 100%;
+ 	height: 150px;
+ 	color:#fff;
+}
+
+@mixin headerM(){
+	background: rgb(214,186,150);
+ 	width: 100%;
+ 	height: 150px;
+ 	color:#fff;
+}
+
+@mixin general(){
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Geneva, Helvetica, Arial, sans-serif;
+}
+
+@mixin fondo(){
+	background-size: cover;
+	position:absolute; 
+	top:0; 
+	bottom:0; 
+	left:0; 
+	right:0;
+}
+
+@mixin logoD(){
+ 	margin-right: auto;
+	width: 250px;
+ 	height: 150px;
+ 	float: left;
+ 	background: url('logo2.png');
+ 	background-size: cover;
+}
+
+@mixin footer(){
+	position:fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background: rgb(178,83,0);
+}
+
+@mixin centrar(){
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 20px;
+	margin: auto;
+	width: 310px;
+}
+
+@mixin boton(){
+	width: 80px;
+	margin-top: 10px;
+	height: 40px;
+	color: rgb(255, 255, 255);
+	background: rgb(255,118,0) none repeat scroll 0% 0%;
+	border-bottom: 2px solid #000;
+}
+
+

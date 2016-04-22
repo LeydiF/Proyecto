@@ -1,0 +1,45 @@
+<div class="bodyTwo">
+  <header>
+ <div class="logo">
+  </div>
+  
+</header>
+
+<div class="slogan">
+  <p><%= @site.name %></p>
+</div>
+
+<p class="image_content">
+<%= image_tag @site.image.url %>
+</p>
+
+<div class="information">
+<p class="description">
+  <%= @site.description %>
+</p>
+
+<p>
+  <strong>Ubicación: </strong><%= @site.location %>
+</p>
+
+<p>
+  <strong>Dirección: </strong><%= @site.address %>
+</p>
+
+<p>
+<%= @site.contact %>
+</p>
+</div>
+
+
+<!-- <p>
+  <strong>Category:</strong>
+  <%= @site.category_id %>
+</p> -->
+
+</div>
+
+<footer>
+	<%= link_to 'Edit', edit_site_path(@site) %> |
+	<%= link_to 'Back', categories_path %>
+</footer>
