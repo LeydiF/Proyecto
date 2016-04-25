@@ -22,24 +22,32 @@
  			width: 60px;
  			background: rgb(255,118,0);
  			color: #fff;
- 			border-radius: 10px;
+ 			border-radius: 4px;
+ 			border: 0px;
+ 			&:hover {
+  			background: #d46204;
+  			text-decoration: none;
+}
  		}
+
  	}
 
  .btn_login{
  	margin-left: 110px;
  	.btn_usuario{
+ 		border: 0px;
  		margin-top: 5px;
  		background: rgb(255,118,0);
- 		border-radius: 10px;
+ 		border-radius: 4px;
  		padding: 5px;
  		width: 100px;
  		color: #fff;
  	}
  	.btn_registro{
  		margin-top: 1px;
+ 		border: 0px;
  		background: rgb(255,118,0);
- 		border-radius: 10px;
+ 		border-radius: 4px;
  		padding: 5px;
  		width: 100px;
  		color: #fff;
@@ -68,6 +76,7 @@
 		width: 150px;
 		height: 35px;
 		margin-top: 10px;
+		border-radius: 4px;
 		a{
 			color: #fff;
 			text-decoration: none;
@@ -78,12 +87,12 @@
 
  .slogan{
  	background: rgb(178,83,0);
- 	height: 30px;
- 	p{
- 		color:#fff;
- 		text-align: center;
- 		font-size: 22px;
- 	}
+ 	height: 15px;
+ 	// p{
+ 	// 	color:#fff;
+ 	// 	text-align: center;
+ 	// 	font-size: 22px;
+ 	// }
  }
 
  /*.................................End Mobile...................................................*/
@@ -91,10 +100,6 @@
  /*.................................Start Tablet.................................................*/
  @media screen and (min-width: 768px){
 
-
- 	header{
- 		background: red;
- 	}
 
  }
  /*.................................End Tablet...................................................*/
@@ -107,21 +112,31 @@
  	}
 
  .logo{
+ 	margin-left: 60px;
+ 	margin-top: 5px;
  	@include logoD
  }
 
  .fondo{
-	background: url(<%= asset_path 'medellinHome.jpg' %>) center no-repeat;
-	@include fondo
+	// background: url(<%= asset_path 'medellinHome.jpg' %>) center no-repeat;
+	// @include fondo
 }
 
  	.btn_login{
- 	margin-left: 1640px;
+ 	margin-left: 1630px;
  	.btn_usuario{
  		margin-top: 15px;
+ 		 &:hover {
+  			background: #d46204;
+  			text-decoration: none;
+}
  	}
  	.btn_registro{
  		margin-top: 15px;
+ 		 	&:hover {
+  			background: #d46204;
+  			text-decoration: none;
+}
  	}
  }
 
@@ -137,6 +152,12 @@
 	}
 	div{
 		margin-top: 30px;
+  		background: #ff7700;
+  		text-decoration: none;
+ 		&:hover {
+  			background: #d46204;
+  			text-decoration: none;
+}
 		}
 	}
 
