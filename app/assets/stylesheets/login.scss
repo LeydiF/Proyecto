@@ -6,7 +6,7 @@
     @include centrar;
 	h2{
  	height: 70px;
- 	background: #0B615E;
+ 	background: rgb(178,83,0);
  	border-bottom: 5px solid #000;
  	margin-top: 0px;
  	color: #fff;
@@ -20,7 +20,7 @@
 
  .botones{
  	margin-top: 20px;
- 	background-color: #0B615E;
+ 	background: rgb(255,118,0);
  	width: 100%;
  	height: 60px;
  	border-radius: 5px;
@@ -38,14 +38,14 @@
  			height: 50px;
  		}
  		#user_email:focus{
- 			border: 2px solid #0B615E;
+ 			border: 2px solid rgb(178,83,0);
  		}
  		#user_password{
  			width: 100%;
  			height: 50px;
  		}
  		#user_password:focus{
- 			border: 2px solid #0B615E;
+ 			border: 2px solid rgb(178,83,0);
  		}
  		#user_remember_me{
  			margin-top: 20px;
@@ -55,7 +55,7 @@
  			height: 50px;
  		}
  		 #user_password_confirmation{
- 			border: 2px solid #0B615E;
+ 			border: 2px solid rgb(178,83,0);
  		}
  	}
 
@@ -63,7 +63,7 @@
     @include centrar;
 	.title{
  	height: 70px;
- 	background: #0B615E;
+ 	background: rgb(178,83,0);
  	border-bottom: 5px solid #000;
  	margin-top: 0px;
  	color: #fff;
@@ -88,7 +88,7 @@
  	@include centrar;
 	.title{
  	height: 70px;
- 	background: #0B615E;
+ 	background: rgb(178,83,0);
  	border-bottom: 5px solid #000;
  	margin-top: 0px;
  	color: #fff;
